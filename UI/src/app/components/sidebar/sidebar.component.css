@@ -1,0 +1,25 @@
+.sidebar[data-color=danger] li.active > a {
+    background-color: #757577 !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(134 116 115 / 40%) !important;
+}
+.navbar-wrapper{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+.navbar-minimize{
+    padding: 5px 15px 0 0;
+}
+:not(.btn-just-icon) .fa{
+    position: relative;
+    top: 2px;
+    margin-top: -4px;
+    margin-right: 4px;
+}
+.sidenav_container {
+    min-width: 60px;
+    height: calc(100vh - 200px);
+    background-image: './assets/img/sidebar-2.jpg';
+    background: #fff;
+    /* box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); */
+  }

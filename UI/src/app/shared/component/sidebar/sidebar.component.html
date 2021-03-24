@@ -1,0 +1,25 @@
+<mat-nav-list>
+  <!-- <div class="profile-card">
+      <div class="header">
+          <h2>Soufiane FADIL</h2>
+          <h4>example@email.com</h4>
+      </div>
+      <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Soufiane FADIL">
+  </div> -->
+
+  <a *ngIf="userDetails.RoleId != 3" mat-list-item [routerLinkActive]="['active']" routerLink="/home">
+    <mat-icon matListIcon>home</mat-icon>HOME
+  </a>
+  <a mat-list-item [routerLinkActive]="['active']" routerLink="/input-form" 
+  *ngIf="userDetails.RoleId == 1 || userDetails.RoleId == 2">
+    <mat-icon matListIcon>content_paste</mat-icon>CREATE INPUT FORM
+  </a>
+  <a *ngIf="userDetails.RoleId == 3" mat-list-item [routerLinkActive]="['active']" routerLink="/payroll-review">
+    <mat-icon matListIcon>preview</mat-icon>PAYROLL REVIEW
+  </a>
+  <a *ngIf="userDetails.RoleId == 3" mat-list-item [routerLinkActive]="['active']" routerLink="/payroll-download">
+    <mat-icon matListIcon>system_update_alt</mat-icon>PAYROLL DOWNLOAD
+  </a>
+</mat-nav-list>
+
+

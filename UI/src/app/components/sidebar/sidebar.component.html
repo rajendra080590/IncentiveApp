@@ -1,0 +1,28 @@
+<div class="sidenav_container" [@onSideNavChange]="sideNavState ? 'open' : 'close'">
+    <!-- <div class="logo">
+        <div class="logo-img"><img src="./assets/img/FBMLogo.PNG"></div>
+        <a href="#" class="simple-text">
+            FBM Sales        
+        </a>
+    </div> -->
+    <div class="sidebar-wrapper">
+        <!-- <div class="navbar-minimize" style="text-align: right;">
+            <button id="minimizeSidebar"  mat-raised-button="" class="btn btn-just-icon btn-white btn-fab btn-round" >
+                <i class="material-icons text_align-center visible-on-sidebar-regular">menu_open</i>
+                <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">menu</i>
+            </button>
+        </div> -->
+        <ul class="nav">
+            <li routerLinkActive="active"  *ngFor="let menuItem of menuItems" class="{{menuItem.class}} 
+            nav-item">
+                <a class="nav-link" [routerLink]="menuItem.path" 
+                [class.disabled]="isInputFormDisable && menuItem.id == 2 ? true : false"
+                style="font-weight: bold;box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(99 90 89 / 40%);" >
+                    <i class="material-icons">{{menuItem.icon}}</i>
+                    <p>{{menuItem.title}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+

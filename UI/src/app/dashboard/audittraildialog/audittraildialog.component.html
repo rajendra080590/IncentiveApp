@@ -1,0 +1,72 @@
+<button mat-icon-button class="close-button" (click)="onNoClick()">
+  <mat-icon class="close-icon">close</mat-icon>
+</button>
+<h1 mat-dialog-title>Audit Trail</h1>
+<div mat-dialog-content>
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-sm row-border hover" *ngIf="auditTrailDetails && auditTrailDetails.length >0" datatable="ng" [dtOptions]="auditDtOptions">
+        <thead>
+          <tr>
+            <th>Form ID</th>
+            <th>Form Status</th>
+            <th>Approval Stage</th>
+            <th>Approver Email</th>
+            <th>Last Updated On</th>
+            <th>Submitted By</th>
+            <th>Submitted On</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let detailsObj of auditTrailDetails; let index = index">
+            <td>{{detailsObj.formHeaderId}}</td>
+            <td>
+              <a *ngIf="detailsObj.formStatus == 'Submitted'" mat-button class="nav-link alert-success">
+                <i class="material-icons">add_task</i> Submitted
+              </a>
+              <a *ngIf="detailsObj.formStatus == 'Approved'" mat-button class="nav-link alert-success">
+                <i class="material-icons">add_task</i> Approved
+              </a>
+              <a *ngIf="detailsObj.formStatus == 'Pending'"  mat-button class="nav-link alert-warning">
+                <i class="material-icons">pending_actions</i> Pending
+              </a>
+              <a *ngIf="detailsObj.formStatus == 'Rejected'"  mat-button class="nav-link alert-danger">
+                <i class="material-icons">close</i> Rejected
+              </a>
+            </td>
+            <td>{{detailsObj.approvalStage}}</td>
+            <td>{{detailsObj.approverEmailId}}</td>
+            <td>{{detailsObj.lastUpdatedOn == '0001-01-01T00:00:00' ? 'NA' : detailsObj.lastUpdatedOn | date : 'MM/dd/yyyy'}}</td>
+            <td>{{detailsObj.submittedBy}}</td>
+            <td>{{detailsObj.submittedOn | date : 'MM/dd/yyyy'}}</td>
+            <td>{{detailsObj.comments}}</td>
+           </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped table-bordered table-sm row-border hover" *ngIf="auditTrailDetails && auditTrailDetails.length == 0" datatable="ng" [dtOptions]="auditDtOptions">
+        <thead>
+          <tr>
+            <th>Form ID</th>
+            <th>Form Status</th>
+            <th>Approval Stage</th>
+            <th>Approver Email</th>
+            <th>Last Updated On</th>
+            <th>Submitted By</th>
+            <th>Submitted On</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let detailsObj of auditTrailDetails; let index = index">
+            <td class="text-center">
+                No Data Available !!
+            </td>
+           </tr>
+        </tbody>
+    </table>
+</div>
+  
+</div>
+<!-- <div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+</div> -->

@@ -1,0 +1,240 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-info">
+                      <h4 class="card-title">PAYROLL REVIEW</h4>
+                  </div>
+                  <form>
+                      <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Select Region</mat-label>
+                                <mat-select name="regionCode" [(ngModel)]="regionCode" (selectionChange)="onSelectionChanged('Region',$event)">
+                                  <mat-option  value="All">All</mat-option>
+                                  <mat-option  name="regionList" *ngFor="let regionObj of regionsArray;let i = index" [value]="regionObj.regionCode">
+                                    {{ regionObj.regionName }}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Select State</mat-label>
+                                <mat-select name="stateCode" [(ngModel)]="stateCode" (selectionChange)="onSelectionChanged('State',$event)">
+                                  <mat-option value="All">All</mat-option>
+                                  <mat-option  name="stateList" *ngFor="let stateObj of statesArray;let i = index" [value]="stateObj.stateCode">
+                                    {{ stateObj.stateCode }}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Select Branch ID</mat-label>
+                                <mat-select name="branchList" [(ngModel)]="branchId" (selectionChange)="onSelectionChanged('Branch',$event)">
+                                  <mat-option value="All">All</mat-option>
+                                  <mat-option  name="branchList" *ngFor="let branchObj of branchMasterArray;let i = index" [value]="branchObj.branchId">
+                                    {{ branchObj.branchId }}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Select Pay Group</mat-label>
+                                <mat-select name="payGroupName" [(ngModel)]="payGroup" (selectionChange)="onSelectionChanged('PayGroup',$event)">
+                                  <mat-option  value="All">All</mat-option>
+                                  <mat-option *ngFor="let pgObj of payGroupArray;let i = index" 
+                                  [value]="pgObj.payGroupName">
+                                    {{ pgObj.payGroupName }}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field>
+                                <mat-label>Week Number</mat-label>
+                                <mat-select name="weekId" [(ngModel)]="weekId" (selectionChange)='weekNumberChange($event)'>
+                                  <mat-option *ngFor="let wObj of weekIdArray;let i = index" [value]="wObj.weekId">
+                                      {{ wObj.weekId }}
+                                  </mat-option>
+                                </mat-select>
+                                
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field>
+                                <mat-label>Payroll Date</mat-label>
+                                <input type="text" matInput value="{{ payrollDate | date : 'MM/dd/yyyy'}}" readonly>
+                              </mat-form-field>
+                            </div>
+                            
+                          </div>
+                          <div class="row">
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Total Branches</mat-label>
+                                <input type="text" matInput value="{{totalBranches}}" readonly>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Not Submitted</mat-label>
+                                <input type="text" matInput value="{{ totalNotSubmittedBranches }}" readonly>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Branch Pending</mat-label>
+                                <input type="text" matInput value="{{ totalBranchPending }}" readonly>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Payroll Pending</mat-label>
+                                <input type="text" matInput value="{{ totalPayrollPending }}" readonly>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <mat-form-field >
+                                <mat-label>Total Amount</mat-label>
+                                <input type="text" matInput value="{{ totalAmount | currency}}" readonly>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-2">
+                              <button mat-raised-button type="button" (click)="searchOnClick()" class="btn btn-info pull-left">
+                                  FILTER
+                              </button>
+                            </div>
+                          </div>
+                          <div class="table-responsive">
+                              <table class="table table-striped table-bordered table-sm row-border hover" *ngIf="payrollReviewDetails && payrollReviewDetails.length >0" datatable="ng" [dtOptions]="dtOptions">
+                                  <thead>
+                                      <tr>
+                                          <th class="text-center">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                  <input type="checkbox" name="all" [checked]="isAllChecked()" class="form-check-input"
+                                                  (change)="checkAll($event)" [disabled]="isAllFormDisable" />
+                                                    <!-- <input class="form-check-input" type="checkbox" name="chkFinalSubmitAll"
+                                                    [checked]="isAllChecked()" (change)="checkAll($event)"/> -->
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                          </th>
+                                          <th class="text-center">
+                                            Reviewed
+                                          </th>
+                                          <th>Branch ID</th>
+                                          <th>Branch Name</th>
+                                          <th>Form Name</th>
+                                          <th>Submitted By</th>
+                                          <th>Submitted On</th>
+                                          <th>Total Employee</th>
+                                          <th>Incentivized</th>
+                                          <th>Total Amount</th>
+                                          <th>Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr *ngFor="let reviewObj of payrollReviewDetails; let index = index;trackBy:customTrackBy">
+                                          <td class="text-center">
+                                              <div class="form-check">
+                                                  <label class="form-check-label">
+                                                    <input type="checkbox" name="isSelected{{index}}" class="form-check-input"
+                                                    value="{{reviewObj.isSelected}}" [checked]="reviewObj.statusId == 5" 
+                                                    [(ngModel)]="reviewObj.isSelected" [disabled]="reviewObj.statusId == 1 || reviewObj.statusId == 5 || isAllFormDisable"
+                                                    (change)="onCheckBoxSelection(reviewObj, $event.target.checked, $event)"/>
+                                                      <!-- <input class="form-check-input" type="checkbox" name="isSelected" (change)="onCheckBoxSelection(reviewObj, $event.target.checked)"
+                                                      [checked]="reviewObj.isSelected" [(ngModel)]="reviewObj.isSelected"/> -->
+                                                      <span class="form-check-sign">
+                                                          <span class="check"></span>
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                          </td>
+                                          <td class="text-center">
+                                              <div class="form-check" *ngIf="!reviewObj.weekId">
+                                                  <label class="form-check-label">
+                                                      <input class="form-check-input" type="checkbox" name="chkReview{{index}}" 
+                                                      value="{{reviewObj.isReviewed}}" [(ngModel)]="reviewObj.isReviewed"
+                                                      [checked]="reviewObj.statusId == 5" 
+                                                      (change)="onReviewedCheckboxSelection(reviewObj, $event.target.checked)"
+                                                      [disabled]="reviewObj.statusId == 1 || reviewObj.statusId == 5 || isAllFormDisable" />
+                                                      <span class="form-check-sign">
+                                                          <span class="check"></span>
+                                                      </span>
+                                                  </label>
+                                              </div>
+                                          </td>
+                                          <td>{{reviewObj.branchId}}</td>
+                                          <td>{{reviewObj.branchName}}</td>
+                                          <td>{{reviewObj.formHeaderId == null ? 'NA' : reviewObj.formHeaderId}}</td>
+                                          <td>{{reviewObj.submittedBy == null ? 'NA' : reviewObj.submittedBy}}</td>
+                                          <td>{{reviewObj.submittedOn == null ? 'NA' : reviewObj.submittedOn}}</td>
+                                          <td class="text-center">{{reviewObj.totalEmployee}}</td>
+                                          <td class="text-center">{{reviewObj.incentivized  == null ? 'NA' : reviewObj.incentivized}}</td>
+                                          <td class="text-right">{{reviewObj.totalAmount | currency}}</td>
+                                          <td class="td-actions text-center">
+                                            <button mat-raised-button="" [disabled]="!reviewObj.formHeaderId" (click)="onDetailsClick(reviewObj.weekId, reviewObj.formHeaderId)" type="button" matTooltip="View Details" [matTooltipPosition]="'above'" class="mat-raised-button mat-button-base btn btn-info">
+                                              <span class="mat-button-wrapper"><i class="material-icons">details</i></span>
+                                              <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                                              <div class="mat-button-focus-overlay"></div>
+                                            </button>
+                                            <button mat-raised-button="" [disabled]="!reviewObj.formHeaderId" (click)="openDialog(reviewObj)" type="button" matTooltip="Audit Trail" [matTooltipPosition]="'above'" class="mat-raised-button mat-button-base btn btn-info">
+                                                <span class="mat-button-wrapper"><i class="material-icons">grid_on</i></span>
+                                                <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                                                <div class="mat-button-focus-overlay"></div>
+                                            </button>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              <table class="table table-striped table-bordered table-sm row-border hover" *ngIf="payrollReviewDetails && payrollReviewDetails.length == 0" datatable="ng" [dtOptions]="dtOptions">
+                                  <thead>
+                                    <tr>
+                                        <th>Branch Id</th>
+                                        <th>Branch Name</th>
+                                        <th>Form Name</th>
+                                        <th>Submitted By</th>
+                                        <th>Submitted On</th>
+                                        <th>Total Employee</th>
+                                        <th>Incentized</th>
+                                        <th>Total Amount</th>
+                                        <th>Action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr *ngFor="let detailsObj of payrollReviewDetails; let index = index">
+                                          <td class="text-center">
+                                              No Data Available !!
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          <div class="clearfix"></div>
+                          <button  mat-raised-button type="button" [disabled]="isAllFormDisable"
+                                  class="btn btn-danger pull-right" (click)="onRejectAllClick(userDetails.RoleId)">
+                              Reject
+                          </button>
+                          <button  mat-raised-button type="button" [disabled]="isAllFormDisable"
+                                  class="btn btn-info pull-right" (click)="onApproveAllClick(userDetails.RoleId)">
+                              Approve
+                          </button>
+                          <!-- <button *ngIf="payrollPendingDetails.length > 0" (click)="downloadCSV()" mat-raised-button type="button"
+                                  class="btn btn-info pull-right">
+                              Export To CSV
+                          </button> -->
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+.btn-danger{
+    background-color: #7A1316 !important;
+}
+.btn-info{
+    background-color: #103355 !important;
+}
+.nav-tabs{
+    border: none !important;
+}
+.card-header{
+    background: #103355 !important;
+}
+.sidebar[data-color=danger] li.active > a {
+    background-color: #7A1316 !important;
+    box-shadow: 0 4px 20px 0px rgba(121, 39, 39, 0.14), 0 7px 10px -5px rgba(124, 49, 43, 0.4);
+}
+
+.td-actions button{
+    margin-right: 2px !important;
+}
+
+th { 
+    white-space: nowrap; 
+ }
+
+ td { 
+    white-space: nowrap; 
+ }
+ .main-panel .main-content{
+    margin-top: 4% !important;
+}
+.dt-button .btn-csv {    
+    background-color: #103355 !important;
+    color: white; 
+    border: 1px outset;
+    font-weight: bold;
+}
+.dt-button .btn-csv:hover {
+    background-color: #103355 !important;
+}
+
+button.dt-button, div.dt-button, a.dt-button, input.dt-button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 0.333em;
+    margin-bottom: 0.333em;
+    padding: 0.5em 1em;
+    border: 1px solid #103355 !important;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 0.88em;
+    line-height: 1.6em;
+    color: #fff !important;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color:  #103355 !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    outline: none;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,7 @@
+.sidebar[data-color=danger] li.active > a {
+    background-color: #757577 !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(134 116 115 / 40%) !important;
+}
+.main-panel .main-content{
+    margin-top: 4% !important;
+}

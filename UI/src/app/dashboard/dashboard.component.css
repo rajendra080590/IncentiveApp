@@ -1,0 +1,31 @@
+.btn-danger{
+    background-color: #7A1316 !important;
+}
+.btn-info{
+    background-color: #103355 !important;
+}
+.nav-tabs{
+    border: none !important;
+}
+.card-header{
+    background: #103355 !important;
+}
+.sidebar[data-color=danger] li.active > a {
+    background-color: #7A1316 !important;
+    box-shadow: 0 4px 20px 0px rgba(121, 39, 39, 0.14), 0 7px 10px -5px rgba(124, 49, 43, 0.4);
+}
+
+.td-actions button{
+    margin-right: 2px !important;
+}
+
+th { 
+    white-space: nowrap; 
+ }
+
+ td { 
+    white-space: nowrap; 
+ }
+ .main-panel .main-content{
+    margin-top: 4% !important;
+}
