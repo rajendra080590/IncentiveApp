@@ -1,0 +1,26 @@
+Automatically send email to Branch Manager or Preparer on Fridays
+Payroll Date – Input Form will be locked down based on next available payroll date….shouldn’t be able to go back to past weeks.
+Have a filter to filter on all weekly/hourly employees only  (data from UltiPro)
+Rename location to Region in the table (e.g.  Great Lake is region not location name)
+Attachments should be associated to form header instead at induvial employee level
+Incentive $ should have a check … only valid between $0.01 to $5,000.00
+Incentive $ format should be number with 2 decimal places
+Leo will check w/ Branch Manager on the approval process and will let us know. 
+The suggestion is to have Primary Approver and Secondary Approver.  After preparer submitted the form, an email should go to primary approver.  If after a couple of hours form is not yet approved, forward form to secondary approver to approve.
+Payroll need to be superuser who can overwrite $ amounts or submit form on behalf of branch managers
+Show total amount by week
+Have a dashboard page by week showing:
+               how many branches submitted
+how many branches have not yet submit. 
+Total employees incentivized
+Total $ amount for that week
+ 
+
+Need to have a page before download…..
+Payroll needs to approve before they can download
+Approval is for all branches
+For branches did not submit, payroll need to have a checkbox to indicate branch is skipping for that week.
+ 
+
+Download is only available for the weeks that is completed (approved).
+Optional:  Input box for Payroll to enter totals from UltiPro.

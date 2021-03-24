@@ -1,0 +1,12 @@
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\bin\Debug\netcoreapp3.1\FBMService.Models.deps.json
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\bin\Debug\netcoreapp3.1\FBMService.Models.dll
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\bin\Debug\netcoreapp3.1\FBMService.Models.pdb
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\obj\Debug\netcoreapp3.1\FBMService.Models.csprojAssemblyReference.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\obj\Debug\netcoreapp3.1\FBMService.Models.AssemblyInfoInputs.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\obj\Debug\netcoreapp3.1\FBMService.Models.AssemblyInfo.cs
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\obj\Debug\netcoreapp3.1\FBMService.Models.dll
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\obj\Debug\netcoreapp3.1\FBMService.Models.pdb
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\bin\Debug\netcoreapp3.1\FBMService.Models.runtimeconfig.json
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\bin\Debug\netcoreapp3.1\FBMService.Models.runtimeconfig.dev.json
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\obj\Debug\netcoreapp3.1\FBMService.Models.csproj.CoreCompileInputs.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Models\obj\Debug\netcoreapp3.1\FBMService.Models.genruntimeconfig.cache

@@ -1,0 +1,9 @@
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\bin\Release\netcoreapp3.1\FBMICService.Utility.deps.json
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\bin\Release\netcoreapp3.1\FBMICService.Utility.dll
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\bin\Release\netcoreapp3.1\FBMICService.Utility.pdb
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\obj\Release\netcoreapp3.1\FBMICService.Utility.csprojAssemblyReference.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\obj\Release\netcoreapp3.1\FBMICService.Utility.AssemblyInfoInputs.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\obj\Release\netcoreapp3.1\FBMICService.Utility.AssemblyInfo.cs
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\obj\Release\netcoreapp3.1\FBMICService.Utility.csproj.CoreCompileInputs.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\obj\Release\netcoreapp3.1\FBMICService.Utility.dll
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.Utility\obj\Release\netcoreapp3.1\FBMICService.Utility.pdb

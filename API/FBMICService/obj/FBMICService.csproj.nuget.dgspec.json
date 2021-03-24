@@ -1,0 +1,320 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMICService\\FBMICService.csproj": {}
+  },
+  "projects": {
+    "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMICService\\FBMICService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMICService\\FBMICService.csproj",
+        "projectName": "FBMICService",
+        "projectPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMICService\\FBMICService.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMICService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.DataAccess\\FBMICService.DataAccess.csproj": {
+                "projectPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.DataAccess\\FBMICService.DataAccess.csproj"
+              },
+              "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Utility\\FBMICService.Utility.csproj": {
+                "projectPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Utility\\FBMICService.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.8.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.AzureAD.UI": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.DataAccess\\FBMICService.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.DataAccess\\FBMICService.DataAccess.csproj",
+        "projectName": "FBMICService.DataAccess",
+        "projectPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.DataAccess\\FBMICService.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Models\\FBMICService.Models.csproj": {
+                "projectPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Models\\FBMICService.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Models\\FBMICService.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Models\\FBMICService.Models.csproj",
+        "projectName": "FBMICService.Models",
+        "projectPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Models\\FBMICService.Models.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Utility\\FBMICService.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Utility\\FBMICService.Utility.csproj",
+        "projectName": "FBMICService.Utility",
+        "projectPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Utility\\FBMICService.Utility.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

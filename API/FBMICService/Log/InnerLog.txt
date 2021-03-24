@@ -1,0 +1,326 @@
+2020-11-08 00:52:55.9332 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-11-08 00:52:56.1976 Debug Found assembly location directory: 'D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2020-11-08 00:52:56.1976 Debug Search for auto loading files in location: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1
+2020-11-08 00:52:56.2050 Debug Start auto loading, location: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1
+2020-11-08 00:52:56.2050 Info Auto loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-11-08 00:52:56.2050 Info Loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-11-08 00:52:56.2634 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-11-08 00:52:56.2634 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-11-08 00:52:56.2634 Info Auto loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-11-08 00:52:56.2634 Info Auto loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-11-08 00:52:56.2634 Info Loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-11-08 00:52:56.2784 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-11-08 00:52:56.2784 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-11-08 00:52:56.2784 Info Auto loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-11-08 00:52:56.2784 Trace Assembly 'Microsoft.Extensions.Logging, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-11-08 00:52:56.2956 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-11-08 00:52:56.2956 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2020-11-08 00:52:56.2956 Trace Assembly 'NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2020-11-08 00:52:56.2956 Debug Auto loading done
+2020-11-08 00:52:56.2956 Info Message Template Auto Format enabled
+2020-11-08 00:52:56.2956 Info Loading assembly: NLog.Extended
+2020-11-08 00:52:56.4355 Trace Try find 'NLog.Extended' in current domain
+2020-11-08 00:52:56.4355 Trace Haven't found' 'NLog.Extended' in current domain
+2020-11-08 00:52:56.4355 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+   --- End of inner exception stack trace ---
+2020-11-08 00:52:56.4866 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.4866 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-08 00:52:56.5065 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2020-11-08 00:52:56.5065 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2020-11-08 00:52:56.5065 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5065 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 00:52:56.5147 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5147 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-11-08 00:52:56.5147 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-11-08 00:52:56.5147 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 00:52:56.5147 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.5147 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 00:52:56.5147 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5307 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2020-11-08 00:52:56.5307 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5307 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-11-08 00:52:56.5307 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2020-11-08 00:52:56.5458 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt'
+2020-11-08 00:52:56.5458 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5458 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-11-08 00:52:56.5458 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2020-11-08 00:52:56.5458 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5458 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-08 00:52:56.5458 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2020-11-08 00:52:56.5458 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2020-11-08 00:52:56.5458 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5458 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 00:52:56.5458 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5458 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-11-08 00:52:56.5458 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-11-08 00:52:56.5458 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 00:52:56.5458 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.5458 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 00:52:56.5458 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.5458 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-11-08 00:52:56.5458 Info Adding target FileTarget(Name=logfile)
+2020-11-08 00:52:56.5458 Debug Registered target logfile: NLog.Targets.FileTarget
+2020-11-08 00:52:56.5458 Trace ParseRulesElement
+2020-11-08 00:52:56.6163 Debug Watching path 'D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1' filter 'NLog.config' for changes.
+2020-11-08 00:52:56.6163 Debug --- NLog configuration dump ---
+2020-11-08 00:52:56.6163 Debug Targets:
+2020-11-08 00:52:56.6163 Debug File Target[logfile]
+2020-11-08 00:52:56.6163 Debug Rules:
+2020-11-08 00:52:56.6227 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2020-11-08 00:52:56.6227 Debug --- End of NLog configuration dump ---
+2020-11-08 00:52:56.6227 Trace FindReachableObject<System.Object>:
+2020-11-08 00:52:56.6227 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2020-11-08 00:52:56.6227 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2020-11-08 00:52:56.6227 Trace  Scanning FileTarget 'File Target[logfile]'
+2020-11-08 00:52:56.6227 Trace   Scanning Property FileName ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt'' NLog.Layouts
+2020-11-08 00:52:56.6227 Trace   Scanning SimpleLayout ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt''
+2020-11-08 00:52:56.6227 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.6227 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 00:52:56.6227 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-11-08 00:52:56.6227 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 00:52:56.6227 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2020-11-08 00:52:56.6227 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-11-08 00:52:56.6227 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.6227 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-08 00:52:56.6227 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 00:52:56.6227 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-11-08 00:52:56.6227 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-11-08 00:52:56.6227 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 00:52:56.6227 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.6379 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 00:52:56.6379 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 00:52:56.6379 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-11-08 00:52:56.6379 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2020-11-08 00:52:56.6379 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2020-11-08 00:52:56.6379 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2020-11-08 00:52:56.6379 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.config
+2020-11-08 00:52:56.6379 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2020-11-08 00:52:56.6545 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2020-11-08 00:52:56.6545 Trace Initializing Layout Renderer: ${message}
+2020-11-08 00:52:56.6545 Trace Initializing Layout Renderer: ${literal}
+2020-11-08 00:52:56.6545 Trace Initializing Layout Renderer: ${level}
+2020-11-08 00:52:56.6545 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2020-11-08 00:52:56.6545 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.6545 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 00:52:56.6545 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.6545 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 00:52:56.6545 Trace Initializing Layout Renderer: ${uppercase}
+2020-11-08 00:52:56.6693 Trace Initializing Layout Renderer: ${literal}
+2020-11-08 00:52:56.6693 Trace Initializing Layout Renderer: ${longdate}
+2020-11-08 00:52:56.6693 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2020-11-08 00:52:56.6693 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.6693 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-11-08 00:52:56.6693 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.6693 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-08 00:52:56.6693 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 00:52:56.6693 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-11-08 00:52:56.6693 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-11-08 00:52:56.6693 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 00:52:56.6693 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.6693 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 00:52:56.6693 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 00:52:56.6693 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-11-08 00:52:56.7038 Trace Initializing Layout Renderer: ${literal}
+2020-11-08 00:52:56.7038 Trace Initializing Layout Renderer: ${shortdate}
+2020-11-08 00:52:56.7038 Trace Initializing Layout Renderer: ${literal}
+2020-11-08 00:52:56.7038 Trace Initializing 'D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt'
+2020-11-08 00:52:56.7038 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 00:52:56.7038 Trace Scanning SimpleLayout ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt''
+2020-11-08 00:52:56.7038 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 00:52:56.7038 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 00:52:56.7038 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-11-08 00:52:56.7038 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 00:52:56.7038 Trace Initializing File Target[logfile]
+2020-11-08 00:52:56.7038 Trace FindReachableObject<NLog.Layouts.Layout>:
+2020-11-08 00:52:56.7038 Trace Scanning FileTarget 'File Target[logfile]'
+2020-11-08 00:52:56.7038 Trace  Scanning Property FileName ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt'' NLog.Layouts
+2020-11-08 00:52:56.7038 Trace  Scanning SimpleLayout ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt''
+2020-11-08 00:52:56.7038 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2020-11-08 00:52:56.7038 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-11-08 00:52:56.7038 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2020-11-08 00:52:56.7038 Trace File Target[logfile] has 2 layouts
+2020-11-08 00:52:56.7165 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2020-11-08 00:52:56.7165 Info Configuration initialized.
+2020-11-08 00:52:56.7165 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-11-08 00:52:56.7165 Debug Targets for FBMICService.Logging.LogNLog by level:
+2020-11-08 00:52:56.7165 Debug Trace =>
+2020-11-08 00:52:56.7165 Debug Debug => logfile
+2020-11-08 00:52:56.7165 Debug Info => logfile
+2020-11-08 00:52:56.7165 Debug Warn => logfile
+2020-11-08 00:52:56.7165 Debug Error => logfile
+2020-11-08 00:52:56.7165 Debug Fatal => logfile
+2020-11-08 00:52:56.7674 Debug FileTarget(Name=logfile): Preparing for new file 'D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/2020-11-08_log.txt'
+2020-11-08 00:52:56.7674 Debug Creating file appender: D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/2020-11-08_log.txt
+2020-11-08 00:52:56.7799 Trace Opening D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/2020-11-08_log.txt with allowFileSharedWriting=False
+2020-11-08 23:59:55.7368 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-11-08 23:59:56.1922 Debug Found assembly location directory: 'D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2020-11-08 23:59:56.1922 Debug Search for auto loading files in location: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1
+2020-11-08 23:59:56.2200 Debug Start auto loading, location: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1
+2020-11-08 23:59:56.2200 Info Auto loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-11-08 23:59:56.2200 Info Loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-11-08 23:59:56.3223 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-11-08 23:59:56.3223 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-11-08 23:59:56.3223 Info Auto loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-11-08 23:59:56.3223 Info Auto loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-11-08 23:59:56.3223 Info Loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-11-08 23:59:56.3703 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-11-08 23:59:56.3703 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-11-08 23:59:56.3735 Info Auto loading assembly file: D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-11-08 23:59:56.3735 Trace Assembly 'Microsoft.Extensions.Logging, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-11-08 23:59:56.3735 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-11-08 23:59:56.3735 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2020-11-08 23:59:56.3735 Trace Assembly 'NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2020-11-08 23:59:56.3735 Debug Auto loading done
+2020-11-08 23:59:56.3735 Info Message Template Auto Format enabled
+2020-11-08 23:59:56.3894 Info Loading assembly: NLog.Extended
+2020-11-08 23:59:56.4822 Trace Try find 'NLog.Extended' in current domain
+2020-11-08 23:59:56.4822 Trace Haven't found' 'NLog.Extended' in current domain
+2020-11-08 23:59:56.4822 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+   --- End of inner exception stack trace ---
+2020-11-08 23:59:56.5207 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5207 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-08 23:59:56.5614 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2020-11-08 23:59:56.5614 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2020-11-08 23:59:56.5614 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5614 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 23:59:56.5614 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5614 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-11-08 23:59:56.5614 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-11-08 23:59:56.5614 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 23:59:56.5614 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.5759 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 23:59:56.5759 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5759 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2020-11-08 23:59:56.5759 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5759 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-11-08 23:59:56.5759 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2020-11-08 23:59:56.5759 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt'
+2020-11-08 23:59:56.5759 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5914 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-11-08 23:59:56.5914 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2020-11-08 23:59:56.5914 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5914 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-08 23:59:56.5914 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2020-11-08 23:59:56.5914 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2020-11-08 23:59:56.5914 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5914 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 23:59:56.5914 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5914 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-11-08 23:59:56.5914 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-11-08 23:59:56.5914 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 23:59:56.5914 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.5914 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 23:59:56.5914 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.5914 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-11-08 23:59:56.5914 Info Adding target FileTarget(Name=logfile)
+2020-11-08 23:59:56.5914 Debug Registered target logfile: NLog.Targets.FileTarget
+2020-11-08 23:59:56.5914 Trace ParseRulesElement
+2020-11-08 23:59:56.6338 Debug Watching path 'D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1' filter 'NLog.config' for changes.
+2020-11-08 23:59:56.6338 Debug --- NLog configuration dump ---
+2020-11-08 23:59:56.6338 Debug Targets:
+2020-11-08 23:59:56.6338 Debug File Target[logfile]
+2020-11-08 23:59:56.6338 Debug Rules:
+2020-11-08 23:59:56.6402 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2020-11-08 23:59:56.6402 Debug --- End of NLog configuration dump ---
+2020-11-08 23:59:56.6402 Trace FindReachableObject<System.Object>:
+2020-11-08 23:59:56.6402 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2020-11-08 23:59:56.6402 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2020-11-08 23:59:56.6402 Trace  Scanning FileTarget 'File Target[logfile]'
+2020-11-08 23:59:56.6402 Trace   Scanning Property FileName ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt'' NLog.Layouts
+2020-11-08 23:59:56.6402 Trace   Scanning SimpleLayout ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt''
+2020-11-08 23:59:56.6402 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.6402 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 23:59:56.6402 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-11-08 23:59:56.6402 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 23:59:56.6542 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2020-11-08 23:59:56.6542 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-11-08 23:59:56.6542 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.6542 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-08 23:59:56.6542 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 23:59:56.6542 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-11-08 23:59:56.6542 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-11-08 23:59:56.6542 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 23:59:56.6542 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.6542 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 23:59:56.6542 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 23:59:56.6542 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-11-08 23:59:56.6542 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2020-11-08 23:59:56.6542 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2020-11-08 23:59:56.6542 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2020-11-08 23:59:56.6542 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMICService\bin\Debug\netcoreapp3.1\NLog.config
+2020-11-08 23:59:56.6701 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2020-11-08 23:59:56.6701 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2020-11-08 23:59:56.6701 Trace Initializing Layout Renderer: ${message}
+2020-11-08 23:59:56.6701 Trace Initializing Layout Renderer: ${literal}
+2020-11-08 23:59:56.6701 Trace Initializing Layout Renderer: ${level}
+2020-11-08 23:59:56.6701 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2020-11-08 23:59:56.6857 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.6857 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 23:59:56.6857 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.6857 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 23:59:56.6857 Trace Initializing Layout Renderer: ${uppercase}
+2020-11-08 23:59:56.6857 Trace Initializing Layout Renderer: ${literal}
+2020-11-08 23:59:56.6857 Trace Initializing Layout Renderer: ${longdate}
+2020-11-08 23:59:56.6857 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2020-11-08 23:59:56.6857 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.6857 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-11-08 23:59:56.6857 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.6857 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-08 23:59:56.6857 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 23:59:56.6857 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-11-08 23:59:56.6857 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-11-08 23:59:56.7011 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-11-08 23:59:56.7011 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.7011 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-11-08 23:59:56.7011 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 23:59:56.7011 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-11-08 23:59:56.7165 Trace Initializing Layout Renderer: ${literal}
+2020-11-08 23:59:56.7165 Trace Initializing Layout Renderer: ${shortdate}
+2020-11-08 23:59:56.7165 Trace Initializing Layout Renderer: ${literal}
+2020-11-08 23:59:56.7165 Trace Initializing 'D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt'
+2020-11-08 23:59:56.7165 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-08 23:59:56.7165 Trace Scanning SimpleLayout ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt''
+2020-11-08 23:59:56.7165 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-11-08 23:59:56.7165 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 23:59:56.7165 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-11-08 23:59:56.7165 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-11-08 23:59:56.7165 Trace Initializing File Target[logfile]
+2020-11-08 23:59:56.7165 Trace FindReachableObject<NLog.Layouts.Layout>:
+2020-11-08 23:59:56.7165 Trace Scanning FileTarget 'File Target[logfile]'
+2020-11-08 23:59:56.7165 Trace  Scanning Property FileName ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt'' NLog.Layouts
+2020-11-08 23:59:56.7165 Trace  Scanning SimpleLayout ''D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/${shortdate}_log.txt''
+2020-11-08 23:59:56.7165 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2020-11-08 23:59:56.7165 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-11-08 23:59:56.7165 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2020-11-08 23:59:56.7165 Trace File Target[logfile] has 2 layouts
+2020-11-08 23:59:56.7345 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2020-11-08 23:59:56.7345 Info Configuration initialized.
+2020-11-08 23:59:56.7345 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False
+2020-11-08 23:59:56.7345 Debug Targets for FBMICService.Logging.LogNLog by level:
+2020-11-08 23:59:56.7345 Debug Trace =>
+2020-11-08 23:59:56.7345 Debug Debug => logfile
+2020-11-08 23:59:56.7498 Debug Info => logfile
+2020-11-08 23:59:56.7498 Debug Warn => logfile
+2020-11-08 23:59:56.7498 Debug Error => logfile
+2020-11-08 23:59:56.7498 Debug Fatal => logfile
+2020-11-08 23:59:56.8097 Debug FileTarget(Name=logfile): Preparing for new file 'D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/2020-11-08_log.txt'
+2020-11-08 23:59:56.8246 Debug Creating file appender: D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/2020-11-08_log.txt
+2020-11-08 23:59:56.8284 Trace Opening D:/Birlasoft/ProjectDetails/FBM-Sales-Incetive-Calculation-Service/FBMICService/Log/2020-11-08_log.txt with allowFileSharedWriting=False

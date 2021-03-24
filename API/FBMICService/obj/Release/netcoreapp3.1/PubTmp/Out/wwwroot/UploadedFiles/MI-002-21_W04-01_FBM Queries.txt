@@ -1,0 +1,72 @@
+--exec SP_FBMGetEmployeeDetailsPendingByPayroll 2,2, 'MI-005,MI-004', null,''
+alter PROC SP_FBMGetEmployeeDetailsPendingByPayroll
+(
+	@StatusId int=null,
+	@Option int =null,
+	@BranchId varchar(50)=null,
+	@WeekId varchar(30)=null,
+	@PayGroup varchar(50)=null,
+	@UserId int=null
+)
+As
+BEGIN
+	IF @Option = 2
+	BEGIN
+		select  'FBM' as CompanyCode, 'UE323' as EarnCode,FD.EmployeeId,E.EmployeeName,B.Region,E.PayFrequency,FD.IncentiveAmount,FD.FormDetailId,FH.FormHeaderId, 
+		E.PayGroup as PayGroupCode, B.BranchId as LocationCode, NULL as EmptyColumn, NULL as BlankColumn, 
+		FD.IncentiveAmount as EarnAmt, FH.WeekId from FormHeader FH
+		inner join FormDetails FD on FH.FormHeaderId = FD.FormHeaderId
+		inner join EmployeeMaster E on E.EmployeeId = FD.EmployeeId
+		inner join BranchMaster B on E.PrimaryHCN = B.SXId
+		where FH.StatusId = @StatusId and (FH.BranchId in (SELECT * FROM split_string(@BranchId, ',')) or FH.WeekId = @WeekId or E.PayGroup = @PayGroup)
+	END
+	ELSE
+	BEGIN
+		select  'FBM' as CompanyCode, 'UE323' as EarnCode,FD.EmployeeId,E.EmployeeName,B.Region,E.PayFrequency,FD.IncentiveAmount,FD.FormDetailId,FH.FormHeaderId, 
+		E.PayGroup as PayGroupCode, B.BranchId as LocationCode, NULL as EmptyColumn, NULL as BlankColumn, 
+		FD.IncentiveAmount as EarnAmt, FH.WeekId from FormHeader FH
+		inner join FormDetails FD on FH.FormHeaderId = FD.FormHeaderId
+		inner join EmployeeMaster E on E.EmployeeId = FD.EmployeeId
+		inner join BranchMaster B on E.PrimaryHCN = B.SXId
+		where FH.StatusId = @StatusId
+	END
+	
+END
+
+
+
+CREATE FUNCTION split_string
+(
+    @in_string VARCHAR(MAX),
+    @delimeter VARCHAR(1)
+)
+RETURNS @list TABLE(tuple VARCHAR(100))
+AS
+BEGIN
+        WHILE LEN(@in_string) > 0
+        BEGIN
+            INSERT INTO @list(tuple)
+            SELECT left(@in_string, charindex(@delimeter, @in_string+',') -1) as tuple
+    
+            SET @in_string = stuff(@in_string, 1, charindex(@delimeter, @in_string + @delimeter), '')
+        end
+    RETURN 
+END
+
+
+--exec SP_FBMGetAllBranches 1
+CREATE procedure SP_FBMGetAllBranches
+( @UserId int = null) 
+As 
+BEGIN
+	select BM.SXId,BM.BranchId, BM.BranchName, BM.BranchManager from BranchMaster BM
+END
+
+
+--exec SP_FBMGetAllPayGroup 1
+CREATE procedure SP_FBMGetAllPayGroup
+( @UserId int = null) 
+As 
+BEGIN
+	select distinct PayGroup as PayGroupName from EmployeeMaster
+END

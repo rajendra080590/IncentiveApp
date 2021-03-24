@@ -1,0 +1,15 @@
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\bin\Debug\netcoreapp3.1\FBMService.DataAccess.deps.json
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\bin\Debug\netcoreapp3.1\FBMService.DataAccess.dll
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\obj\Debug\netcoreapp3.1\FBMService.DataAccess.csprojAssemblyReference.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\obj\Debug\netcoreapp3.1\FBMService.DataAccess.AssemblyInfoInputs.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\obj\Debug\netcoreapp3.1\FBMService.DataAccess.AssemblyInfo.cs
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\bin\Debug\netcoreapp3.1\FBMService.DataAccess.pdb
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\obj\Debug\netcoreapp3.1\FBMService.DataAccess.csproj.CoreCompileInputs.cache
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\obj\Debug\netcoreapp3.1\FBMService.DataAccess.dll
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\obj\Debug\netcoreapp3.1\FBMService.DataAccess.pdb
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\bin\Debug\netcoreapp3.1\FBMService.DataAccess.runtimeconfig.json
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\bin\Debug\netcoreapp3.1\FBMService.DataAccess.runtimeconfig.dev.json
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\bin\Debug\netcoreapp3.1\FBMService.Models.dll
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\bin\Debug\netcoreapp3.1\FBMService.Models.pdb
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\obj\Debug\netcoreapp3.1\FBMService.DataAccess.csproj.CopyComplete
+D:\Birlasoft\ProjectDetails\FBM-Sales-Incentive-Calculation-Service\FBMService.DataAccess\obj\Debug\netcoreapp3.1\FBMService.DataAccess.genruntimeconfig.cache

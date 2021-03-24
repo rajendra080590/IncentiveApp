@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "NxPxcUSNnJJ6fjsYQru23BhlGmdxkukv/+lKQpUjGleibd+zKjA1R8iR1FzReABLyVgVKfVN8Rf3rF10DIYY2A==",
+  "success": true,
+  "projectFilePath": "D:\\Birlasoft\\ProjectDetails\\FBM_SourceCode_New\\IncentiveApp_UI_Only_AD_Auth\\FBM-Sales-Incentive-Calculation-Service\\FBMService.Utility\\FBMICService.Utility.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
